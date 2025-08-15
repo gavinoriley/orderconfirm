@@ -107,6 +107,44 @@
             font-size: 30px;
             cursor: pointer;
         }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                max-width: 100%;
+                overflow-x: auto;
+                padding: 10px 0;
+            }
+
+            .navbar a {
+                font-size: 16px;
+            }
+
+            .navbar a.play-game-link {
+                display: none;
+            }
+
+            body {
+                padding: 10px;
+            }
+
+            .welcome-text {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                margin-top: 60px;
+                font-size: 18px;
+            }
+
+            .close-button {
+                font-size: 24px;
+                top: 10px;
+                right: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -115,7 +153,7 @@
         <a href="https://hamachithepsychotickiller.com/about/">GAME INFO</a>
         <a href="https://store.steampowered.com/app/3355690/Hamachi_the_Psychotic_Killer/" target="_blank">BUY EARLY ACCESS</a>
         <a href="https://store.steampowered.com/news/app/3355690/view/520845543638827040" target="_blank" class="devlog-link">NEWS</a>
-        <a href="https://itch.io/embed-upload/13425866?color=333333" target="_blank">PLAY GAME</a>
+        <a href="https://itch.io/embed-upload/13425866?color=333333" target="_blank" class="play-game-link">PLAY GAME</a>
         <a href="https://hamachithepsychotickiller.com/devroom/">DEV ROOM</a>
     </nav>
 
